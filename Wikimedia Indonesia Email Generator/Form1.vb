@@ -1,11 +1,14 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        txbHasil.Text = "Halo " & txbKepada.Text & "," & Environment.NewLine & Environment.NewLine & "Berikut adalah permintaan penggantian " &
-            txbPembelian.Text & " sebesar Rp" & txbNominal.Text & "." & Environment.NewLine & Environment.NewLine &
-            "Pranala nota: " & txbPranalaNota.Text & Environment.NewLine & Environment.NewLine & "Pranala laporan penggunaan dana: " &
-            txbPranalaLaporan.Text & Environment.NewLine & Environment.NewLine & "Pranala anggaran: " & txbPranalaAnggaran.Text & Environment.NewLine & Environment.NewLine &
-            "Apabila disetujui, mohon dana tersebut dikirim ke rekening " & cmbBank.Text & " " & txbNoRekeningTujuan.Text &
-            " a.n. " & txbNamaRekening.Text & "." & Environment.NewLine & Environment.NewLine & "Terima kasih dan salam,"
+        Dim Nominal As Decimal
+        Nominal = txbNominal.Text
+
+        txbHasil.Text = "Halo " & Trim(txbKepada.Text) & "," & Environment.NewLine & Environment.NewLine & "Berikut adalah permintaan penggantian " &
+            Trim(txbPembelian.Text) & " sebesar Rp" & Trim(Nominal.ToString("N2")) & "." & Environment.NewLine & Environment.NewLine &
+            "Pranala nota: " & Trim(txbPranalaNota.Text) & Environment.NewLine & Environment.NewLine & "Pranala laporan penggunaan dana: " &
+            Trim(txbPranalaLaporan.Text) & Environment.NewLine & Environment.NewLine & "Pranala anggaran: " & Trim(txbPranalaAnggaran.Text) & Environment.NewLine & Environment.NewLine &
+            "Apabila disetujui, mohon dana tersebut dikirim ke rekening " & Trim(cmbBank.Text) & " " & Trim(txbNoRekeningTujuan.Text) &
+            " a.n. " & Trim(txbNamaRekening.Text) & "." & Environment.NewLine & Environment.NewLine & "Terima kasih dan salam,"
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -37,6 +40,18 @@
         If txbHasil.Text <> String.Empty Then
             Clipboard.Clear()
             Clipboard.SetText(txbHasil.Text)
+        End If
+    End Sub
+
+    Private Sub txbNominal_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txbNominal.KeyPress
+        If e.KeyChar <> ControlChars.Back Then
+            e.Handled = Not (Char.IsDigit(e.KeyChar) Or e.KeyChar = ".")
+        End If
+    End Sub
+
+    Private Sub txbNoRekeningTujuan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txbNoRekeningTujuan.KeyPress
+        If e.KeyChar <> ControlChars.Back Then
+            e.Handled = Not (Char.IsDigit(e.KeyChar) Or e.KeyChar = ".")
         End If
     End Sub
 End Class

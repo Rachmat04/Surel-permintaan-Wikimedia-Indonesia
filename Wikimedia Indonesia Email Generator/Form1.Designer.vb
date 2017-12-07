@@ -70,7 +70,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(484, 287)
+        Me.GroupBox1.Size = New System.Drawing.Size(484, 296)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Isi surel"
@@ -223,7 +223,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 314)
+        Me.Button1.Location = New System.Drawing.Point(12, 319)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(250, 23)
         Me.Button1.TabIndex = 16
@@ -232,7 +232,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(353, 314)
+        Me.Button2.Location = New System.Drawing.Point(353, 319)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(143, 23)
         Me.Button2.TabIndex = 17
@@ -241,6 +241,7 @@ Partial Class Form1
         '
         'txbHasil
         '
+        Me.txbHasil.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbHasil.Location = New System.Drawing.Point(12, 353)
         Me.txbHasil.Multiline = True
         Me.txbHasil.Name = "txbHasil"
@@ -271,7 +272,9 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Surel permintaan klaim Wikimedia Indonesia"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
