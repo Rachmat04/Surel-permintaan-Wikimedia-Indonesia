@@ -1,14 +1,12 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim Nominal As Decimal
-        Nominal = txbNominal.Text
-
+        Dim Nominal As Double = txbNominal.Text
         txbHasil.Text = "Halo " & Trim(txbKepada.Text) & "," & Environment.NewLine & Environment.NewLine & "Berikut adalah permintaan penggantian " &
-            Trim(txbPembelian.Text) & " sebesar Rp" & Trim(Nominal.ToString("N2")) & "." & Environment.NewLine & Environment.NewLine &
-            "Pranala nota: " & Trim(txbPranalaNota.Text) & Environment.NewLine & Environment.NewLine & "Pranala laporan penggunaan dana: " &
-            Trim(txbPranalaLaporan.Text) & Environment.NewLine & Environment.NewLine & "Pranala anggaran: " & Trim(txbPranalaAnggaran.Text) & Environment.NewLine & Environment.NewLine &
-            "Apabila disetujui, mohon dana tersebut dikirim ke rekening " & Trim(cmbBank.Text) & " " & Trim(txbNoRekeningTujuan.Text) &
-            " a.n. " & Trim(txbNamaRekening.Text) & "." & Environment.NewLine & Environment.NewLine & "Terima kasih dan salam,"
+                Trim(txbPembelian.Text) & " sebesar Rp" & Trim(Nominal.ToString("N2")) & "." & Environment.NewLine & Environment.NewLine &
+                "Nota: " & Trim(txbPranalaNota.Text) & Environment.NewLine & Environment.NewLine & "Laporan penggunaan dana: " &
+                Trim(txbPranalaLaporan.Text) & Environment.NewLine & Environment.NewLine & "Anggaran: " & txbPranalaAnggaran.Text & Environment.NewLine & Environment.NewLine &
+                "Apabila disetujui, mohon dana tersebut dikirim ke rekening " & Trim(cmbBank.Text) & " " & Trim(txbNoRekeningTujuan.Text) &
+                " a.n. " & Trim(txbNamaRekening.Text) & "." & Environment.NewLine & Environment.NewLine & "Salam," & Environment.NewLine & txbNamaRekening.Text
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load

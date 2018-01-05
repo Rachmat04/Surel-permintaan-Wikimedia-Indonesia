@@ -6,13 +6,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{90F47E5B-0F99-48F2-BE6D-D235A86346E0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Wikimedia_Indonesia_Email_Generator.My.MyApplication</StartupObject>
-    <RootNamespace>Wikimedia_Indonesia_Email_Generator</RootNamespace>
+    <StartupObject>Surel_penggantian_dana_Wikimedia_Indonesia.My.MyApplication</StartupObject>
+    <RootNamespace>Surel_penggantian_dana_Wikimedia_Indonesia</RootNamespace>
     <AssemblyName>Surel penggantian dana Wikimedia Indonesia</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +46,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>googlemail_ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -117,6 +121,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="googlemail_ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

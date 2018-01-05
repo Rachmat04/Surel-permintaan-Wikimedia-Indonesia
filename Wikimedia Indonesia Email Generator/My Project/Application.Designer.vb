@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Wikimedia_Indonesia_Email_Generator.Form1
+            Me.MainForm = Global.Surel_penggantian_dana_Wikimedia_Indonesia.Form1
         End Sub
     End Class
 End Namespace
