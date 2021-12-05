@@ -45,6 +45,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txbHasil = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -263,11 +264,22 @@ Partial Class Form1
         Me.Button3.Text = "Salin…"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label10.Location = New System.Drawing.Point(12, 497)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(217, 19)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Copyright © 2017-2021 Rachmat"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(583, 531)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.txbHasil)
         Me.Controls.Add(Me.Button2)
@@ -310,4 +322,5 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents txbNamaRekening As TextBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label10 As Label
 End Class

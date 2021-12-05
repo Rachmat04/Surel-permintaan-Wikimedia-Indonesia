@@ -128,4 +128,5 @@
         txbPranalaNota.Text = ""
         cmbBank.Text = ""
     End Sub
+
 End Class
