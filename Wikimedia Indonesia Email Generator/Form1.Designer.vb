@@ -68,9 +68,10 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.txbPembelian)
         Me.GroupBox1.Controls.Add(Me.txbKepada)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(484, 296)
+        Me.GroupBox1.Size = New System.Drawing.Size(559, 296)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Isi surel"
@@ -80,15 +81,15 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(6, 258)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(128, 13)
+        Me.Label9.Size = New System.Drawing.Size(166, 20)
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Nama pemilik rekening:"
         '
         'txbNamaRekening
         '
-        Me.txbNamaRekening.Location = New System.Drawing.Point(202, 255)
+        Me.txbNamaRekening.Location = New System.Drawing.Point(256, 255)
         Me.txbNamaRekening.Name = "txbNamaRekening"
-        Me.txbNamaRekening.Size = New System.Drawing.Size(276, 22)
+        Me.txbNamaRekening.Size = New System.Drawing.Size(297, 27)
         Me.txbNamaRekening.TabIndex = 16
         '
         'Label8
@@ -96,17 +97,17 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(6, 230)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(131, 13)
+        Me.Label8.Size = New System.Drawing.Size(165, 20)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Nomor rekening tujuan:"
         '
         'cmbBank
         '
         Me.cmbBank.FormattingEnabled = True
-        Me.cmbBank.Items.AddRange(New Object() {"Bank Mandiri", "Bank Central Asia", "Bank Rakyat Indonesia", "Bank Negara Indonesia 46", "Bank Muamalat", "Bank Tabungan Pensiunan Negara"})
-        Me.cmbBank.Location = New System.Drawing.Point(202, 200)
+        Me.cmbBank.Items.AddRange(New Object() {"Bank Mandiri", "Bank Central Asia (BCA)", "Bank Rakyat Indonesia (BRI)", "Bank Negara Indonesia 46 (BNI)", "Bank Muamalat", "Bank Syariah Indonesia (BSI)", "Bank Tabungan Pensiunan Negara (BTPN)"})
+        Me.cmbBank.Location = New System.Drawing.Point(256, 200)
         Me.cmbBank.Name = "cmbBank"
-        Me.cmbBank.Size = New System.Drawing.Size(276, 21)
+        Me.cmbBank.Size = New System.Drawing.Size(297, 28)
         Me.cmbBank.TabIndex = 14
         '
         'Label7
@@ -114,7 +115,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(6, 202)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(124, 13)
+        Me.Label7.Size = New System.Drawing.Size(155, 20)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Untuk dikirim ke bank:"
         '
@@ -123,7 +124,7 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(6, 174)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(152, 13)
+        Me.Label6.Size = New System.Drawing.Size(196, 20)
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "Pranala anggaran (opsional)"
         '
@@ -132,7 +133,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(6, 145)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(190, 13)
+        Me.Label5.Size = New System.Drawing.Size(240, 20)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Pranala laporan penggunaan dana:"
         '
@@ -141,43 +142,43 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(6, 116)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 13)
+        Me.Label4.Size = New System.Drawing.Size(95, 20)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Pranala nota:"
         '
         'txbNoRekeningTujuan
         '
-        Me.txbNoRekeningTujuan.Location = New System.Drawing.Point(202, 227)
+        Me.txbNoRekeningTujuan.Location = New System.Drawing.Point(256, 227)
         Me.txbNoRekeningTujuan.Name = "txbNoRekeningTujuan"
-        Me.txbNoRekeningTujuan.Size = New System.Drawing.Size(276, 22)
+        Me.txbNoRekeningTujuan.Size = New System.Drawing.Size(297, 27)
         Me.txbNoRekeningTujuan.TabIndex = 9
         '
         'txbPranalaAnggaran
         '
-        Me.txbPranalaAnggaran.Location = New System.Drawing.Point(202, 171)
+        Me.txbPranalaAnggaran.Location = New System.Drawing.Point(256, 171)
         Me.txbPranalaAnggaran.Name = "txbPranalaAnggaran"
-        Me.txbPranalaAnggaran.Size = New System.Drawing.Size(276, 22)
+        Me.txbPranalaAnggaran.Size = New System.Drawing.Size(297, 27)
         Me.txbPranalaAnggaran.TabIndex = 8
         '
         'txbPranalaLaporan
         '
-        Me.txbPranalaLaporan.Location = New System.Drawing.Point(202, 142)
+        Me.txbPranalaLaporan.Location = New System.Drawing.Point(256, 142)
         Me.txbPranalaLaporan.Name = "txbPranalaLaporan"
-        Me.txbPranalaLaporan.Size = New System.Drawing.Size(276, 22)
+        Me.txbPranalaLaporan.Size = New System.Drawing.Size(297, 27)
         Me.txbPranalaLaporan.TabIndex = 7
         '
         'txbPranalaNota
         '
-        Me.txbPranalaNota.Location = New System.Drawing.Point(202, 113)
+        Me.txbPranalaNota.Location = New System.Drawing.Point(256, 113)
         Me.txbPranalaNota.Name = "txbPranalaNota"
-        Me.txbPranalaNota.Size = New System.Drawing.Size(276, 22)
+        Me.txbPranalaNota.Size = New System.Drawing.Size(297, 27)
         Me.txbPranalaNota.TabIndex = 6
         '
         'txbNominal
         '
-        Me.txbNominal.Location = New System.Drawing.Point(202, 84)
+        Me.txbNominal.Location = New System.Drawing.Point(256, 84)
         Me.txbNominal.Name = "txbNominal"
-        Me.txbNominal.Size = New System.Drawing.Size(158, 22)
+        Me.txbNominal.Size = New System.Drawing.Size(297, 27)
         Me.txbNominal.TabIndex = 5
         '
         'Label3
@@ -185,7 +186,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(6, 87)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(110, 13)
+        Me.Label3.Size = New System.Drawing.Size(144, 20)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Nominal pembelian:"
         '
@@ -194,47 +195,50 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(6, 59)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(160, 13)
+        Me.Label2.Size = New System.Drawing.Size(204, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Untuk keperluan (pembelian):"
         '
         'txbPembelian
         '
-        Me.txbPembelian.Location = New System.Drawing.Point(202, 56)
+        Me.txbPembelian.Location = New System.Drawing.Point(256, 56)
         Me.txbPembelian.Name = "txbPembelian"
-        Me.txbPembelian.Size = New System.Drawing.Size(276, 22)
+        Me.txbPembelian.Size = New System.Drawing.Size(297, 27)
         Me.txbPembelian.TabIndex = 2
         '
         'txbKepada
         '
-        Me.txbKepada.Location = New System.Drawing.Point(202, 27)
+        Me.txbKepada.Location = New System.Drawing.Point(256, 27)
         Me.txbKepada.Name = "txbKepada"
-        Me.txbKepada.Size = New System.Drawing.Size(276, 22)
+        Me.txbKepada.Size = New System.Drawing.Size(297, 27)
         Me.txbKepada.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(6, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 13)
+        Me.Label1.Size = New System.Drawing.Size(128, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ditujukan kepada:"
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(12, 319)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(250, 23)
+        Me.Button1.Size = New System.Drawing.Size(250, 32)
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "Buat surel!"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(353, 319)
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(428, 319)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 23)
+        Me.Button2.Size = New System.Drawing.Size(143, 32)
         Me.Button2.TabIndex = 17
         Me.Button2.Text = "Hapus semua"
         Me.Button2.UseVisualStyleBackColor = True
@@ -242,27 +246,28 @@ Partial Class Form1
         'txbHasil
         '
         Me.txbHasil.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbHasil.Location = New System.Drawing.Point(12, 353)
+        Me.txbHasil.Location = New System.Drawing.Point(12, 357)
         Me.txbHasil.Multiline = True
         Me.txbHasil.Name = "txbHasil"
         Me.txbHasil.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txbHasil.Size = New System.Drawing.Size(484, 161)
+        Me.txbHasil.Size = New System.Drawing.Size(559, 127)
         Me.txbHasil.TabIndex = 18
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(353, 520)
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(428, 490)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(143, 23)
+        Me.Button3.Size = New System.Drawing.Size(143, 32)
         Me.Button3.TabIndex = 19
         Me.Button3.Text = "Salin…"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(508, 559)
+        Me.ClientSize = New System.Drawing.Size(583, 531)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.txbHasil)
         Me.Controls.Add(Me.Button2)
